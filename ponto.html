@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhe do ponto · GeoPoint</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+
+  <main class="container">  
+    <p class="info" id="carregando">Carregando...</p>
+
+    <section class="escondido" id="secao-erro">
+      <p class="erro" id="erro" role="alert"></p>
+      <a href="index.html">Voltar para a lista</a>
+    </section>
+
+    <section class="detalhe   escondido" id="secao-detalhe">
+      <a href="index.html">Voltar</a>
+      <h1 id="nome"></h1>
+      <dl>
+        <dt>Descrição</dt><dd id="descricao"></dd>
+        <dt>Latitude</dt><dd id="latitude"></dd>
+        <dt>Longitude</dt><dd id="longitude"></dd>
+        <dt>Código</dt><dd id="codigo" class="codigo"></dd>
+      </dl>
+      <div class="acoes">
+        <a href="#" class="botao" id="btn-editar">Editar</a>
+        <button type="button" class="perigo" id="btn-excluir">Excluir</button>
+        <a href="index.html" class="botao secundario">Voltar à lista</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/detalhe.js"></script>
+</body>
+</html>
