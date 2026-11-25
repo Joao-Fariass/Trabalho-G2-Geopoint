@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novo ponto · GeoPoint</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+
+  <main class="container">
+    <p class="info escondido" id="carregando">Carregando ponto...</p>
+
+    <section class="escondido" id="secao-form">
+      <h1 id="titulo">Novo ponto</h1>
+      <p class="erro escondido" id="erro" role="alert"></p>
+
+      <form class="formulario" id="form-ponto" novalidate>
+        <div class="campo">
+          <label for="name">Nome *</label>
+          <input id="name" name="name" maxlength="100" autocomplete="off" />
+        </div>
+
+        <div class="campo">
+          <label for="description">Descrição</label>
+          <textarea id="description" name="description" rows="3" maxlength="255"></textarea>
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="latitude">Latitude * (-90 a 90)</label>
+            <input id="latitude" name="latitude" type="number" step="any" inputmode="decimal" />
+          </div>
+          <div class="campo">
+            <label for="longitude">Longitude * (-180 a 180)</label>
+            <input id="longitude" name="longitude" type="number" step="any" inputmode="decimal" />
+          </div>
+        </div>
+
+        <div class="acoes">
+          <button type="submit" id="btn-salvar">Cadastrar</button>
+          <a href="index.html" class="botao secundario">Cancelar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>
