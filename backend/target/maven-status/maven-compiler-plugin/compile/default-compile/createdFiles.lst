@@ -1,0 +1,10 @@
+br\com\geopoint\dto\PointRequest.class
+br\com\geopoint\exception\GlobalExceptionHandler.class
+br\com\geopoint\exception\PointNotFoundException.class
+br\com\geopoint\GeoPointApplication.class
+br\com\geopoint\config\CorsConfig.class
+br\com\geopoint\repository\PointRepository.class
+br\com\geopoint\dto\PointResponse.class
+br\com\geopoint\model\Point.class
+br\com\geopoint\controller\PointController.class
+br\com\geopoint\service\PointService.class
