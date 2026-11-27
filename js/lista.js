@@ -38,7 +38,7 @@ async function carregar() {
 }
 
 async function handleExcluir(ponto) {
-  if (!confirm(`Excluir "${ponto.name}"?`)) return;
+  if (!(await confirmarExclusao(ponto.name))) return;
   try {
     await excluirPonto(ponto.id);
     pontos = pontos.filter((p) => p.id !== ponto.id);

@@ -41,7 +41,7 @@ async function carregar() {
 }
 
 document.getElementById('btn-excluir').addEventListener('click', async () => {
-  if (!confirm(`Excluir "${ponto.name}"?`)) return;
+  if (!(await confirmarExclusao(ponto.name))) return;
   try {
     await excluirPonto(idPonto);
     window.location.href = 'index.html';
